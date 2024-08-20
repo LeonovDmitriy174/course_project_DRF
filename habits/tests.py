@@ -8,7 +8,7 @@ from users.models import User
 
 class HabitTestCase(APITestCase):
     def setUp(self):
-        self.user = User.objects.create(email="admin@example.com")
+        self.user = User.objects.create(email="admintest@example.com")
         self.user.set_password("123")
         self.user.save()
         self.client = APIClient()
